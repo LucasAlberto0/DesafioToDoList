@@ -13,13 +13,12 @@ main {
     justify-content: center;
     flex-direction: row;
     gap: 80px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .containerTarefas {
     min-width: 50%;
 }
-
 
 .assinaturaImg {
     position: absolute;
@@ -83,7 +82,7 @@ h1 {
 .card-tarefa {
     width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 15px;
     margin: 10px;
@@ -182,6 +181,4 @@ h1 {
         align-items: center;
         justify-content: center;
     }
-
 }
-

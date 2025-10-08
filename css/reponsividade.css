@@ -1,0 +1,173 @@
+@media(max-width: 1600px) {
+    .containerTarefas {
+        min-width: 65%;
+    }
+
+    h1 {
+        color: #602cb5;
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 1279px) {
+    main {
+        gap: 50px;
+    }
+
+    .containerTarefas {
+        min-width: 65%;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .header-quadro-tarefas {
+        font-size: 1.6rem;
+    }
+
+    .contagemTarefas-header {
+        font-size: 1.3rem;
+    }
+
+}
+
+
+
+@media(max-width: 1069px) {
+    main {
+        gap: 50px;
+    }
+
+    .containerTarefas {
+        min-width: 65%;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .header-quadro-tarefas {
+        font-size: 1.6rem;
+    }
+
+    .contagemTarefas-header {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media(max-width: 991px) {
+    main {
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .containerTarefas {
+        min-width: 90%;
+    }
+
+}
+
+@media(max-width: 768px) {
+    main {
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .containerTarefas {
+        min-width: 90%;
+    }
+}
+
+@media(max-width: 650px) {
+    main {
+        padding: 60px 0px;
+    }
+
+    .containerTitulo {
+        img {
+            height: 40px;
+        }
+
+        img:hover {
+            scale: none;
+        }
+    }
+
+    .contagemTarefas-body {
+        height: auto;
+
+        .tarefasRealizadas {
+            width: 100%;
+            border-radius: 0px;
+            height: 30px;
+        }
+
+        .tarefasNaoCompletadas {
+            height: 30px;
+            width: 100%;
+            border-radius: 0px 0px 13px 13px;
+        }
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .header-quadro-tarefas {
+        font-size: 1.3rem;
+    }
+
+    .contagemTarefas-header {
+        font-size: 1.1rem;
+    }
+
+    .contagemTarefas-body {
+        font-size: 0.8rem;
+        flex-direction: column;
+    }
+
+    .card-tarefa {
+        justify-content: space-between;
+        font-size: 0.8rem;
+        padding: 6px;
+
+        &:hover {
+            scale: none;
+        }
+
+        #editarTarefa {
+            padding: 2px;
+            cursor: pointer;
+        }
+
+        #excluirTarefa {
+            padding: 2px;
+        }
+    }
+
+    .assinaturaImg {
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        height: 22px;
+        width: 90px;
+        filter: brightness(0) invert(1);
+    }
+}
+
+@media (min-width: 1024px) and (max-height: 770px) {
+    main {
+        padding: 20px 0px;
+    }
+
+    .assinaturaImg {
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        height: 30px;
+        width: 120px;
+        filter: brightness(0) invert(1);
+    }
+}
