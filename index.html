@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,41 +14,53 @@
     <title>DesafioToDoList</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="assets/icons/scratch.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
 </head>
+
 <body>
     <main>
         <img class="assinaturaImg
         " src="assets/assinatura.png" alt="">
         <div class="containerTitulo">
-        <h1 class="quando-regular-b">Task List</h1>
-            <button title="adicionarTarefa" id="adicionarTarefa" ><img src="assets/icons/plusIcon.svg" alt=""></button>
-    </div>
+            <h1 class="quando-regular-b">Task List</h1>
+            <button title="adicionarTarefa" id="adicionarTarefa"><img src="assets/icons/plusIcon.svg" alt=""></button>
+        </div>
         <div class="containerTarefas">
-        <div class="quadro-tarefas quando-regular">
-            <div class="header-quadro-tarefas">Tarefas</div>
-            <div class="card-tarefa">
-                <input type="checkbox" id="02-11" type="checkbox" name="r" value="2" placeholder=".">
-                <span>TarefaTeste</span>
-                <div>
-                    <button title="editarTarefa" id="editarTarefa"><img src="assets/icons/editIcon.svg" alt=""></button>
-                    <button title="excluirTarefa" id="excluirTarefa"><img src="assets/icons/deleteIcon.svg" alt=""></button>
-                </div>   
+            <div class="quadro-tarefas quando-regular">
+                <div class="header-quadro-tarefas">Tarefas</div>
+                <div class="card-tarefa">
+                    <div class="pretty p-svg p-plain p-bigger p-smooth">
+                        <input type="checkbox" placeholder="." />
+                        <div class="state">
+                            <img class="svg" src="assets/icons/checkBoxIcon.svg" alt="" />
+                            <label>circle</label>
+                        </div>
+                    </div>
+                    <span>TarefaTeste</span>
+                    <div>
+                        <button title="editarTarefa" id="editarTarefa"><img src="assets/icons/editIcon.svg"
+                                alt=""></button>
+                        <button title="excluirTarefa" id="excluirTarefa"><img src="assets/icons/deleteIcon.svg"
+                                alt=""></button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="contagemTarefas quando-regular">
-            <div class="contagemTarefas-header">Contagem de Tarefas</div>
-            <div class="contagemTarefas-body">
-                <div class="tarefasRealizadas">
-                Tarefas Realizadas: 
-            </div>
-            <div class="tarefasNaoCompletadas">
-                Tarefas não completadas:
+            <div class="contagemTarefas quando-regular">
+                <div class="contagemTarefas-header">Contagem de Tarefas</div>
+                <div class="contagemTarefas-body">
+                    <div class="tarefasRealizadas">
+                        Tarefas Realizadas:
+                    </div>
+                    <div class="tarefasNaoCompletadas">
+                        Tarefas não completadas:
+                    </div>
+                </div>
             </div>
         </div>
-        </div>
-    </div>
     </main>
+
     <script src="../dist/bundle.js"></script>
 </body>
+
 </html>
