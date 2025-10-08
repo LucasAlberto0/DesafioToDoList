@@ -4,11 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/components/checkboxCustom.css">
+    <title>DesafioToDoList</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icons/scratch.png" type="image/x-icon">
 </head>
 <body>
-    <p>DesafioToDoList</p>
+    <main>
+        <img class="assinaturaImg
+        " src="assets/assinatura.png" alt="">
+        <div class="containerTitulo">
+        <h1 class="quando-regular-b">To Do List</h1>
+            <button title="adicionarTarefa" id="adicionarTarefa" ><img src="assets/icons/plusIcon.svg" alt=""></button>
+    </div>
+        <div class="containerTarefas">
+        <div class="quadro-tarefas quando-regular">
+            <div class="header-quadro-tarefas">Tarefas</div>
+            <div class="card-tarefa">
+                <input type="checkbox" id="02-11" type="checkbox" name="r" value="2" placeholder=".">
+                <span>TarefaTeste</span>
+                <div>
+                    <button title="editarTarefa" id="editarTarefa"><img src="assets/icons/editIcon.svg" alt=""></button>
+                    <button title="excluirTarefa" id="excluirTarefa"><img src="assets/icons/deleteIcon.svg" alt=""></button>
+                </div>   
+            </div>
+        </div>
+
+        <div class="contagemTarefas quando-regular">
+            <div class="contagemTarefas-header">Contagem de Tarefas</div>
+            <div class="contagemTarefas-body">
+                <div class="tarefasRealizadas">
+                Tarefas Realizadas: 
+            </div>
+            <div class="tarefasNaoCompletadas">
+                Tarefas não completadas:
+            </div>
+        </div>
+        </div>
+    </div>
+    </main>
 
     <script src="../dist/bundle.js"></script>
 </body>
