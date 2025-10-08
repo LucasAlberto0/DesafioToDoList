@@ -1,0 +1,20 @@
+{
+  "name": "desafiotodolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^9.5.4",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "webpack-cli": "^6.0.1"
+  }
+}
