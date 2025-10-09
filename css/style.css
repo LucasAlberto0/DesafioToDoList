@@ -33,8 +33,6 @@ h1 {
     font-size: 4rem;
 }
 
-
-
 .containerTitulo {
     display: flex;
     justify-content: center;
@@ -79,6 +77,53 @@ h1 {
     text-align: center;
 }
 
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.animar-entrada {
+    animation: popIn 0.25s ease-out;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+}
+
+.fade-out {
+    animation: fadeOut 0.3s forwards;
+}
+
+.input-editar {
+    padding: 6px 8px;
+    border-radius: 6px;
+    width: 80%;
+    font-size: 1rem;
+    outline: none;
+    font-family: "Quando", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.input-editar:focus {
+    border-color: #602cb5;
+}
+
 .card-tarefa {
     width: 90%;
     display: flex;
@@ -90,12 +135,7 @@ h1 {
     background-color: #602cb5;
     border-radius: 10px;
     color: #FFFAFA;
-    transition: all ease 0.4s;
-    cursor: pointer;
-
-    &:hover {
-        scale: 1.05;
-    }
+    transition: transform 0.2s ease;
 
     input[type="checkbox"] {
         cursor: pointer;
