@@ -1,6 +1,6 @@
 import type { Tarefa } from "../models/TarefaInterface";
 
-const STORAGE_KEY = "tarefas";
+const Storage_Key = "tarefas";
 
 export class TarefaService {
     private tarefas: Tarefa[] = [];
@@ -42,11 +42,11 @@ export class TarefaService {
     }
 
     private carregarTarefas(): Tarefa[] {
-        const dados = localStorage.getItem(STORAGE_KEY);
+        const dados = localStorage.getItem(Storage_Key);
         return dados ? JSON.parse(dados) : [];
     }
 
     private salvarTarefas(): void {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(this.tarefas));
+        localStorage.setItem(Storage_Key, JSON.stringify(this.tarefas));
     }
 }

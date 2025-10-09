@@ -32,11 +32,10 @@
 
 }
 
-
-
 @media(max-width: 1069px) {
     main {
         gap: 50px;
+        margin: 80px 0px;
     }
 
     .containerTarefas {
@@ -54,6 +53,13 @@
     .contagemTarefas-header {
         font-size: 1.3rem;
     }
+
+    .containerTarefas {
+        min-width: 50%;
+        margin: 0px;
+    }
+
+
 
 }
 
@@ -82,7 +88,16 @@
 
 @media(max-width: 650px) {
     main {
-        padding: 60px 0px;
+        margin: 60px 0px;
+    }
+
+    .input-editar {
+        width: 60%;
+        font-size: 0.8rem;
+        outline: none;
+        font-family: "Quando", serif;
+        font-weight: 500;
+        font-style: normal;
     }
 
     .containerTitulo {
